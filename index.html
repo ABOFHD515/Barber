@@ -31,5 +31,76 @@
   
   <!-- زر لإضافة الحلاقين -->
   <button style="background-color: #333; color: #fff; font-family: Arial, sans-serif; font-size: 18px; text-align: center; padding: 10px; border-radius: 10px; margin: 20px;">إضافة حلاق جديد</button>
-  
+  <!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>إضافة حلاق جديد | برنس الحلاقين</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    header, section, button {
+        background-color: #2E865F; /* Dark Green */
+        color: #fff; /* White */
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    input[type="text"], input[type="number"], select {
+        width: 80%;
+        padding: 8px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    label {
+        font-size: 18px;
+    }
+    button {
+        background-color: #333; /* Dark */
+        color: #fff; /* White */
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>إضافة حلاق جديد</h1>
+    <p>املأ المعلومات اللازمة لإضافة حلاق جديد إلى قائمة الحلاقين</p>
+</header>
+
+<section>
+    <form>
+        <label for="barberName">اسم الحلاق:</label><br>
+        <input type="text" id="barberName" name="barberName" required><br>
+        
+        <label for="barberRating">تقييم الحلاق:</label><br>
+        <input type="number" id="barberRating" name="barberRating" step="0.1" min="0" max="5" required><br>
+        
+        <label for="salonName">اسم الصالون:</label><br>
+        <input type="text" id="salonName" name="salonName" required><br>
+
+        <label for="region">المنطقة:</label><br>
+        <select id="region" name="region" required>
+            <option value="">اختر المنطقة...</option>
+            <option value="riyadh">الرياض</option>
+            <option value="jeddah">جدة</option>
+            <option value="dammam">الدمام</option>
+            <!-- يمكن إضافة المزيد من المناطق هنا -->
+        </select><br>
+
+        <label for="district">الحي:</label><br>
+        <input type="text" id="district" name="district" required><br>
+
+        <button type="submit">إضافة الحلاق</button>
+    </form>
+</section>
+</body>
+</html>
+
   <!-- نهاية الصفحة -->
