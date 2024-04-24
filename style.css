@@ -1,0 +1,66 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  #teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .team {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+  }
+  
+  .team ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .team li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .team li:last-child {
+    border-bottom: none;
+  }
